@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import { BrowserRouter } from "react-router-dom";
+import { useStateContext } from "./contexts/ContextProvider";
+import SideNav from "./components/SideNav";
+
+import Home from "./components/Home";
+import Contact from "./components/Contact";
+import Blog from "./components/Blog";
+import AboutMe from "./components/AboutMe";
+import Portfolio from "./components/Portfolio";
+import Resume from "./components/Resume";
+import { Routes, Route } from "react-router-dom";
+import Name from './pages/Name'
 
 function App() {
+  const {screen, setScreen} = useStateContext();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="flex  relative bg-[#022c43]">
+      
+
+        {/* sideNav */}
+        <div className=' fixed inset-y-0 left-0 w-[10%]  min-h-screen '>
+          {/* bg-gray-800 w-[10%] */}
+          <SideNav />
+        </div> 
+        <div className="absolute inset-y-0 right-0 w-[90%] min-h-screen gap-6">
+         {screen !== "large"  && ( <div className="w-[100%]">
+            <Name/>
+          </div>)}
+        <div className='w-[100%] ' >
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutMe />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
