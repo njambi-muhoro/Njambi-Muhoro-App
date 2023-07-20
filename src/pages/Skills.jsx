@@ -47,43 +47,58 @@ function Skills() {
              Expert in front-end development including technologies like [Click or Hover for details]
              
            </h4>
-      <div className="animated-mail">
-   
-        <div className="back-fold">
-          
-        </div>
-        <div className="letter">
-          <div className="letter-border">
-        
-          </div>
-          <div className="letter-title">
-         
-          </div>
-          <div className="letter-context">
-          <p>
-         
-           <span className=" flex flex-wrap w-[100%] text-sm font-bold">
-             <span className="tech-tag">HTML5</span>,
-             <span className="tech-tag">CSS3</span>,
-             <span className="tech-tag">JavaScript</span>,
-             <span className="tech-tag">React</span>,
-             <span className="tech-tag">TypeScript</span>,
-             <span className="tech-tag">Bootstrap</span>,
-             <span className="tech-tag">Tailwind</span>,
-             <span className="tech-tag">Git</span>, etc.
-           </span>
-         </p>
-          </div>
-          <div className="letter-stamp">
-            <div className="letter-stamp-inner"></div>
-          </div>
-        </div>
-        <div className="top-fold"></div>
-        <div className="bodys"></div>
-        <div className="left-fold"></div>
-      </div>
-      <div className="shadow"></div>
+    
+
+
+<div class="logo-holder flex flex-col gap-4">
+
+  <div className="flex gap-6">
+    <div class="bar"></div>
+  <h4>CSS3</h4>
+  </div>
+
+  <div className="flex gap-6">
+  <div class="bar fill1">
+  </div>
+  <h4>JavaScript</h4>
+  </div>
+
+  <div className="flex gap-6">
+  <div class="bar fill2">
+  </div>
+  <h4>React</h4>
+  </div>
+
+  <div className="flex gap-6">
+  <div class="bar fill3"></div>
+  <h4>TypeScript</h4>
+  </div>
+
+  <div className="flex gap-6">
+<div class="bar fill4"></div>
+<h4>Bootstrap</h4>
+</div>
+
+<div className="flex gap-6">
+<div class="bar fill5"></div>
+<h4>Tailwind</h4>
+</div>
+
+<div className="flex gap-6">
+<div class="bar fill6"></div>
+<h4>Git</h4>
+</div>
+
+<div className="flex gap-6">
+<div class="bar fill7"></div>
+<h4>HTML5</h4>
+</div>
+
+
+ 
+    </div> 
     </div>
+   
     
   );
 }
