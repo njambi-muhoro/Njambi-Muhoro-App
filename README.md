@@ -4,7 +4,7 @@ Welcome to my portfolio! This repository contains the source code for my persona
 
 ## Live Demo
 
-You can see the live demo of my portfolio at https://www.myportfolio.com.
+You can see the live demo of my portfolio at https://njambi-muhoro-portfolio.vercel.app/
 
 ### Features
 
@@ -30,7 +30,7 @@ Projects: Explore some of my highlighted projects with descriptions and links to
 #### Clone this repository to your local machine using:
 
 
-git clone https://github.com/your-username/my-portfolio.git
+git clone [SSH] git@github.com:njambi-muhoro/Njambi-Muhoro-App.git
 Navigate to the project directory:
 
 
@@ -49,7 +49,7 @@ This will start the development server and open the portfolio website in your de
 
 ## Deployment
 
-The portfolio is deployed using Vercel. Whenever you push changes to the main branch, Vercel will automatically deploy the latest version of your portfolio. You can access it at https://www.myportfolio.com.
+The portfolio is deployed using Vercel. Whenever you push changes to the main branch, Vercel will automatically deploy the latest version of your portfolio. You can access it at https://njambi-muhoro-portfolio.vercel.app/
 
 ### Customization
 

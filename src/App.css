@@ -3,6 +3,7 @@
 #textDecor {
   font-family: Serif;
 }
+
 #textName {
   font-family: serif;
 }
@@ -96,8 +97,6 @@ body{
   left: 50%;
   width: 200px;
   height: 200px;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
@@ -778,5 +777,62 @@ body{
   }
   90%, 10% {
     transform: rotate(0deg);
+  }
+}
+
+
+/* @media (max-width: 767px) {
+  .letter-image {
+    /* Keep the position property as absolute */
+    /* position: absolute;
+    top: 180%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+} */ 
+
+@media (max-width: 767px) {
+
+  .letter-image {
+    /* Remove the position property */
+    position: static;
+    margin-left: 200px;
+    /* Add any other styles you want for small screens here */
+    width: 300px;
+  height: 300px;
+    /* Center the element on the left side */
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    /* Remove the margin-left to center the element horizontally */
+  margin-top: 120px;
+    /* Optionally, you can align the element to the left or center it using justify-content */
+    justify-content: center;
+    /* You can add more styles here based on your requirements */
+    cursor: default; /* Optionally, change the cursor to default on small screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .animated-mail {
+    /* Change the position to static for small screens */
+    position: static;
+    /* Add any other styles you want for small screens here */
+    width: 100%; /* For example, set the width to 100% to make it full-width */
+    height: auto; /* Set height to auto or adjust it as needed */
+    /* Center the element on the left side */
+    padding-top:130px;
+    /* You can add more styles here based on your requirements */
+  }
+
+  /* Add any other styles specific to small screens here */
+
+  /* Additional styles for .animated-mail .top-fold on small screens */
+  .animated-mail .top-fold {
+   display: none;
+  }
+
+  .animated-mail .top-fold{
+
   }
 }

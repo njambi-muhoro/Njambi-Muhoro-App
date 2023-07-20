@@ -37,7 +37,7 @@ import React from "react";
 
 function Skills() {
   return (
-    <div className="letters-mage">
+  
     <div className="letter-image ">
          <h1 className=" text-yellow-400 text-2xl italy underline" id="textName">
           Skills & Experience
@@ -62,7 +62,7 @@ function Skills() {
           <div className="letter-context">
           <p>
          
-           <span className=" flex flex-wrap w-[100%] text-sm">
+           <span className=" flex flex-wrap w-[100%] text-sm font-bold">
              <span className="tech-tag">HTML5</span>,
              <span className="tech-tag">CSS3</span>,
              <span className="tech-tag">JavaScript</span>,
@@ -84,7 +84,7 @@ function Skills() {
       </div>
       <div className="shadow"></div>
     </div>
-    </div>
+    
   );
 }
 

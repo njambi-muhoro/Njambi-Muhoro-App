@@ -20,16 +20,22 @@ const Portfolio = () => {
           />
         </a>
 
-        <div class="p-5">
+        <div class="p-5  flex-1">
           <a href="#">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-green-900 dark:text-white">
               FREESHI VEGGIES LTD
             </h5>
           </a>
-          <p class="mb-3 font-normal text-white dark:text-white-400 italic">
-            Shop the freshest, best quality food, that is good for you and good
-            for the planet. Shop Kenya's best quality products on Freeshi Veggies
-            with same day delivery
+          <p class="mb-3 font-normal text-white dark:text-white-400 italic flex flex-col flex-wrap sm:flex-nowrap">
+            <span className="">
+            Shop the freshest, best quality food,
+            </span>
+            <span>  that is good for you and good
+            for the planet.</span>
+            <span>Shop Kenya's best quality products on Freeshi Veggies
+            with same day delivery</span>
+             
+            
           </p>
           <a
             href="#"

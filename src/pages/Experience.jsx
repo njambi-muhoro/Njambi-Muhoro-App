@@ -32,7 +32,7 @@ const Experience = () => {
               {" "}
               <span id="content1">
                 • Responsible for Designing and developing user interfaces for
-                Fresh2Door's website app
+                Fresh2Door's website app.
               </span>{" "}
               <span id="content1">
                 {" "}
@@ -44,7 +44,7 @@ const Experience = () => {
                 • Implementing complex user interactions and animations
               </span>{" "}
               <span id="content1">
-                • Optimize frontend performance for a seamless user experience,
+                • Optimize frontend performance for a seamless user experience.
               </span>
             </p>
           </div>

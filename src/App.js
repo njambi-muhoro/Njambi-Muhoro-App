@@ -19,14 +19,17 @@ function App() {
     <BrowserRouter>
       <div className="flex  relative bg-[#022c43]">
       
-
-        {/* sideNav */}
-        <div className=' fixed inset-y-0 left-0 w-[10%]  min-h-screen '>
-          {/* bg-gray-800 w-[10%] */}
+      {/* sideNav */}
+{screen !== "small" &&   
+        <div className=' fixed inset-y-0 left-0  w-[10%] min-h-screen '>
+         
           <SideNav />
-        </div> 
-        <div className="absolute inset-y-0 right-0 w-[90%] min-h-screen gap-6">
-         {screen !== "large"  && ( <div className="w-[100%]">
+        </div> }
+      
+        <div className={`absolute inset-y-0 right-0 min-h-screen gap-6 ${screen === "small" ? 'w-full' : 'absolute inset-y-0 right-0 w-[90%] min-h-screen gap-6'}`}>
+         
+          {/*   */}
+         {screen !== "large"  && ( <div className="w-[100%] flex-1">
             <Name/>
           </div>)}
         <div className='w-[100%] ' >

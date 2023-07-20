@@ -1,11 +1,12 @@
 import { NavLink } from "react-router-dom";
 import myImage from "../images/mypic.jpeg";
 
+
 const SideNav = () => {
   return (
     <div className="flex flex-col  h-full  overflow-auto md:overflow-hidden md:hover:overflow-auto bg-gray-800" id="container">
       <div className="flex flex-col justify-center">
-        <img src={myImage} alt="profile image" className="" />
+        <img src={myImage} alt="img" className="" />
         <h3 className=" hidden sm:block text-white bg-[#45a1d2] px-2">
           Lucy Njambi
         </h3>

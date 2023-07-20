@@ -8,10 +8,7 @@ import Skills from "../pages/Skills";
 
 const Resume = () => {
   return (
-    <section
-      id="resume"
-      className="resume-section pt-page  min-h-screen "
-    >
+   
       <div className="px-0 sm:px-24 pt-2">
         <div className=" flex justify-between text-sky-500 font-bold text-3xl border-b border-dotted flex-wrap sm:flex-nowrap">
           <h1 id="textName">My Resume</h1>
@@ -33,7 +30,7 @@ const Resume = () => {
           <Skills/>
         </div>
       </div>
-    </section>
+   
   );
 };
 

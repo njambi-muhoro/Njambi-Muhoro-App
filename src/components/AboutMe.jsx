@@ -14,7 +14,7 @@ const AboutMe = () => {
         </div>
         <div className="flex justify-between gap-20 flex-wrap md:w-[100%] sm:flex-nowrap  pt-6 ">
           <div className="w-[100%] md:w-[100%] sm:w-[60%] flex  flex-col gap-4">
-            <h2 id="textDecor" className="text-white text-lg">
+            <h2 id="textDecor" className="text-white text-xl font-bold underline decoration-sky-500">
               Frontend Developer
             </h2>
             <h6 className="text-white text-sm leading-loose">
@@ -28,7 +28,7 @@ const AboutMe = () => {
           </div>
 
           <div className=" w-[100%] md:w-[100%] sm:w-[30%] text-white flex flex-col gap-4">
-            <h2 id="textDecor" className="text-white text-lg w-[100%] sm:[100%]">
+            <h2 id="textDecor" className="text-white text-xl font-bold underline decoration-sky-500 w-[100%] sm:[100%]">
               Personal Information
             </h2>
             <div className="">
