@@ -30,14 +30,14 @@ const Blog = () => {
         </div>
       </div>
     </div>
-    <div className="swatch w-[50%] sm:w-[60%]">
+    {/* <div className="swatch w-[40%] sm:w-[60%]">
      <div></div>
       <div></div>
       <div></div>
       <div></div>
       <div></div>
       <div></div>
-    </div>
+    </div> */}
     </div>
     </div>
   );
