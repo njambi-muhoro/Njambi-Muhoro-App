@@ -1,41 +1,47 @@
-import { useState, useEffect, useContext, createContext } from "react";
+import React, { useEffect, useState, createContext, useContext } from 'react';
 
 const stateContext = createContext();
 
 export function ContextProvider({ children }) {
-  // we are exporting all states we are going to use in our project
-
-  // the below will be used to set load time of our application
   const [contentLoaded, setContentLoaded] = useState(false);
-
-  // the below will be used to determine the screen size
+  const [activeMenu, setActiveMenu] = useState(true);
   const [screen, setScreen] = useState('');
-  useEffect(() => {
-    function handleSize(){
-      const screenWidth = window.innerWidth;
-      if(screenWidth < 640){
-        setScreen('small')
-      } else if(screenWidth >=640 && screenWidth < 1024){
-          setScreen('medium')
-      } else{
-        setScreen('large')
-      }
-    }
-    window.addEventListener('resize', handleSize);
-    handleSize();
+  const [screenSize, setScreenSize] = useState(undefined);
 
-    return()=>{
-      window.removeEventListener("resize",handleSize)
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      setScreenSize(screenWidth);
+
+      if (screenWidth <= 990 ) {
+        setScreen('small');
+        setActiveMenu(false);
+      
+      } else {
+        setScreen('large');
+        setActiveMenu(true);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
   return (
     <stateContext.Provider
       value={{
-        contentLoaded: contentLoaded,
-        setContentLoaded: setContentLoaded,
+        contentLoaded,
+        setContentLoaded,
         screen,
         setScreen,
+        activeMenu,
+        setActiveMenu,
+        screenSize,
+        setScreenSize,
       }}
     >
       {children}
@@ -43,8 +49,6 @@ export function ContextProvider({ children }) {
   );
 }
 
-//how to use the values
 export function useStateContext() {
-  // it return a call to the used context, we pass in
   return useContext(stateContext);
 }
