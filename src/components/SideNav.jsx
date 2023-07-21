@@ -1,10 +1,12 @@
 import { NavLink } from "react-router-dom";
+import { useStateContext } from "../contexts/ContextProvider";
 import myImage from "../images/mypic.jpeg";
 
 
 const SideNav = () => {
+  const {screen, activeMenu} = useStateContext();
   return (
-    <div className="flex flex-col  h-full  overflow-auto md:overflow-hidden md:hover:overflow-auto bg-gray-800" id="container">
+    <div className="flex flex-col  h-full  overflow-auto md:overflow-hidden md:hover:overflow-auto bg-black" id="container">
       <div className="flex flex-col justify-center">
         <img src={myImage} alt="img" className="" />
         <h3 className=" hidden sm:block text-white bg-[#45a1d2] px-2">
@@ -57,7 +59,8 @@ const SideNav = () => {
         </NavLink>
       </div>
       <div className="flex flex-wrap sm:flex-nowrap" id="footers">
-        <h6 className="text-white ">
+        {/* ${!activeMenu && "display-hidden"} "text-white"  */}
+        <h6 className={`${activeMenu && "display-hidden"} text-white`}>
           2021 © Lucy-Njambi. All Right Reserved.
         </h6>
       </div>
