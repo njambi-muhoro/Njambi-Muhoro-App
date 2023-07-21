@@ -9,7 +9,7 @@ const SideNav = () => {
     <div className="flex flex-col  h-full  overflow-auto md:overflow-hidden md:hover:overflow-auto bg-black" id="container">
       <div className="flex flex-col justify-center">
         <img src={myImage} alt="img" className="" />
-        <h3 className=" hidden sm:block text-white bg-[#45a1d2] px-2">
+        <h3 className=" hidden sm:block text-white bg-[#45a1d2] px-2 text-center">
           Lucy Njambi
         </h3>
       </div>
