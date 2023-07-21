@@ -13,7 +13,7 @@ const Name = () => {
       <h1 className='' id='textName'>
         Lucy Njambi
       </h1>
-      <div className='' onClick={handleActiveMenu}>
+      <div className='text-2xl' onClick={handleActiveMenu}>
         <ImMenu />
       </div>
     </div>

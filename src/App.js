@@ -37,10 +37,10 @@ function App() {
           <SideNav />
         </div> } */}
       
-        <div className={` min-h-screen gap-6 ${screen === "small" ? 'w-full' : 'fixed inset-y-0 right-0 w-[80%] min-h-screen gap-6'}`}>
+        <div className={` min-h-screen gap-6  ${screen === "small" ? 'w-full' : 'fixed inset-y-0 right-0 w-[80%] min-h-screen gap-6'}`}>
          
           {/*   */}
-         {screen  !== 'large' &&( <div className="w-[100%] flex-1">
+         {screen  !== 'large' &&( <div className="w-[100%]  flex-1">
             <Name/>
           </div>)}
         <div className='w-[100%] ' >
