@@ -13,23 +13,34 @@ import { Routes, Route } from "react-router-dom";
 import Name from './pages/Name'
 
 function App() {
-  const {screen, setScreen} = useStateContext();
+  const {screen, activeMenu} = useStateContext();
 
   return (
     <BrowserRouter>
       <div className="flex  relative bg-[#022c43]">
+{/* `{!activeMenu ? fixed inset-y-0 left-0  w-[10%] min-h-screen : 'w-72' }` */}
+        {activeMenu ? (
+            <div className={`fixed inset-y-0 left-0 min-h-screen ${!activeMenu ? 'w-[30%]' : 'w-[20%]'} `}>
+              <SideNav />
+            </div>
+          ) : (
+            // `{${!activeMenu ? 'w-[30%]' : 'w-0'}`}
+            <div className='w-0 '>
+              <SideNav />
+            </div>
+          )}
       
       {/* sideNav */}
-{screen !== "small" &&   
+{/* {screen !== "small" &&   
         <div className=' fixed inset-y-0 left-0  w-[10%] min-h-screen '>
          
           <SideNav />
-        </div> }
+        </div> } */}
       
-        <div className={`absolute inset-y-0 right-0 min-h-screen gap-6 ${screen === "small" ? 'w-full' : 'absolute inset-y-0 right-0 w-[90%] min-h-screen gap-6'}`}>
+        <div className={` min-h-screen gap-6 ${screen === "small" ? 'w-full' : 'fixed inset-y-0 right-0 w-[80%] min-h-screen gap-6'}`}>
          
           {/*   */}
-         {screen !== "large"  && ( <div className="w-[100%] flex-1">
+         {screen  !== 'large' &&( <div className="w-[100%] flex-1">
             <Name/>
           </div>)}
         <div className='w-[100%] ' >
