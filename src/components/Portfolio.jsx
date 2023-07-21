@@ -1,7 +1,10 @@
 import React from "react";
 import { BsFillJournalBookmarkFill } from "react-icons/bs";
+import { useStateContext } from "../contexts/ContextProvider";
+
 
 const Portfolio = () => {
+  const {screen, activeMenu} = useStateContext();
   return (
     <div className="px-0 sm:px-24 pt-2  flex flex-col gap-4">
       <div className=" flex justify-between text-sky-500 font-bold text-3xl border-b border-dotted flex-wrap sm:flex-nowrap">
@@ -11,16 +14,16 @@ const Portfolio = () => {
         </div>
       </div>
 
-      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+      <div class="  ">
         <a href="#">
           <img
-            class="rounded-t-lg"
+            class="rounded-t-lg w-[40%]"
             src="	https://victormatara.com/wp-content/uploads/2018/03/Webp.net-compress-image-14.jpg"
             alt=""
           />
         </a>
 
-        <div class="p-5  flex-1">
+        <div class="p-5  flex-1 w-[50%]">
           <a href="#">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-green-900 dark:text-white">
               FREESHI VEGGIES LTD
