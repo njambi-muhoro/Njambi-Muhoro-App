@@ -37,7 +37,7 @@ body{
   display: block;
   width: 16px;
   height: 16px;
-  background-color: blue;
+  background-color: black;
   border-radius: 50%;
 }
 
@@ -46,7 +46,7 @@ body{
   display: block;
   width: 2px;
   /* height: 100%; */
-  background-color: blue;
+  background-color: black;
   transform: translate(7px, 0);
 }
 
@@ -271,7 +271,7 @@ animation: fill-1 5s infinite alternate, colors 5s infinite alternate;
   display: block;
   text-align: center;
   position: relative;
-  margin: 100px;
+  margin-left: 120px;
 }
 
 .swatch div {
